@@ -1,0 +1,229 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS表單練習</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            /* background-image: url("/images/popcat_open.jpg"); */
+            background-size: cover;/*背景圖篇拉伸*/
+        }
+        table{
+            margin: 0 auto;
+            /* 特殊用法，用於將某個標籤相對頁面水平居中 */
+            /* border:1px solid red */
+        }
+        a{
+            color: darkgreen;
+            font-size: 30px;/*設置文本大小*/
+            text-decoration: none;/*去掉下畫線*/
+            text-decoration: line-through;/*刪除線*/
+        }
+        td{
+            text-align: center;
+            /* 設置內容水平居中 */
+            border:3px solid grey
+        }
+        #td-ListName{
+            text-align: center;
+            border-bottom: dashed darkblue;
+            border-top: dashed darkblue;
+        }
+        #logo-description{
+            color: coral;
+        }
+        #logo-connection-for-link{
+            width: 800;
+        }
+        .top-icon{
+            height: 50px;
+        }
+
+        .icon-table{
+            width: 200px;
+            height: 200px;
+        }
+        .icon-size{
+            width: 200px;
+        }
+        #表單基礎{
+            background-image: url("images/popcat_open.jpg");
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="0"><hr>
+        <tr style="background-color: snow; color:black ;" >
+            <td height="50" width="100">
+                <p id="td-ListName">SiteList</p>
+            </td>
+            <td class="top-icon">
+                <img height="50" src="/images/icon/unoline-icons/Unoline/Social/Apple.svg">    
+            </td>
+            <td ><a href="https://www.apple.com/tw/">Apple</a></td>
+            <td class="top-icon">
+                <img width="50" src="/images/icon/unoline-icons/Unoline/Social/Google.svg">              
+            </td>
+            <td ><a href="https://www.Google.com/">Google</a></td>
+            <td class="top-icon">
+                <img img height="50" src="/images/icon/unoline-icons/Unoline/Social/Github.svg">
+            </td>
+            <td ><a href="https://github.com/">Github</a></td>
+            <td class="top-icon">
+                <img img height="50" src="/images/icon/unoline-icons/Unoline/Social/Instagram.svg">
+            </td>
+            <td ><a href="https://www.instagram.com/?hl=zh-tw">Instagram</a></td>
+        </tr>
+        
+    </table><hr>
+    
+    
+    <table  border="0">
+        <tr >
+            <td>
+                <h1>這個入口頁面該如何使用?<h1>
+            </td>
+                         
+        </tr>
+        <tr >
+            <td>
+                <p>此網站都是一個方便連接到常用網站的索引頁面，在列表中有主要的網站。</p>
+                <p>如需協助可以連接到Google進行搜尋，或於上方網址區輸入想搜尋的內容。</p>
+            </td>
+        </tr>
+    </table>
+    <table id="logo-connection-for-link" border="0">
+        <tr class="icon-table" style="background-color: snow;">
+            <td class="icon-size"><a href="https://www.google.com/intl/zh-TW/chrome/">
+                <img class="icon-size" src="/images/icon/unoline-icons/Unoline/Social/Chrome.svg" alt="">
+                </a>                
+            </td>
+            <td ><a href="https://www.netflix.com/tw/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse">
+                <img class="icon-size" src="/images/icon/unoline-icons/Unoline/Social/Netflix.svg" alt="">
+                </a>
+            </td>
+            <td  ><a href="https://www.facebook.com/">
+                <img class="icon-size" src="/images/icon/unoline-icons/Unoline/Social/Facebook.svg" alt="">
+                </a>
+            </td>
+            <td  ><a href="https://mail.google.com/mail/u/0/#inbox">
+                <img class="icon-size" src="/images/icon/unoline-icons/Unoline/Social/Gmail.svg" alt="">
+                </a>
+            </td>
+        </tr>
+            
+        <tr >
+            <td>
+                <p>Chrome</p>
+            </td>
+            <td>
+                <p>Netflix</p>
+            </td>
+            <td>
+                <p>Facebook</p>
+            </td>
+            <td>
+                <p>Gmail</p>
+            </td>
+        </tr>
+        <tr id="logo-description">
+            <td>
+                <p>網頁瀏覽器，登入後可以有更多功能</p>
+            </td>
+            <td>
+                <p>觀看影劇、動畫的好選擇，須付費購買會員才能夠觀賞</p>
+            </td>
+            <td>
+                <p>社群媒體網站</p>
+            </td>
+            <td>
+                <p>收發信件的好地方</p>
+            </td>
+        </tr>
+    </table><br>
+    <table border="0">
+        <td width="150" >
+            <p><a href="">幫助</a></p>
+        </td>
+        <td width="150" >
+            <p><a href="">聯絡作者</a></p>
+        </td>
+        <td width="150" >
+            <p><a href="">版權聲明</a></p>
+        </td>
+    </table>
+    <hr>
+    
+    
+    
+    
+    <form action="/04-表單基礎.html">
+        <table border="1" id="表單基礎">
+            <tr>
+                <td height="10">姓名：<input type="text" value="123" disabled></td>
+            </tr>
+            <tr>
+                <td height="10">性別：
+                    <input type="radio" name="gender">男
+                    <input type="radio" name="gender">女
+                </td>
+            </tr>
+            <tr>
+                <td height="10">學歷：
+                    <select name="" id="">
+                        <option value="" selected>請選擇學歷</option>
+                        <option value="">學齡前</option>
+                        <option value="">幼稚園</option>
+                        <option value="">國小</option>
+                        <option value="">國中</option>
+                        <option value="">高中</option>
+                        <option value="">大學</option>
+                        <option value="">研究所</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td height="10">運動愛好：
+                    <input type="checkbox">閱讀
+                    <input type="checkbox">玩遊戲
+                    <input type="checkbox">運動
+                </td>
+            </tr>
+            <tr>
+                <td >性格描述：<br><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td  height="10"><button>提交</button>
+                <input type="reset" value="清空"></td>
+            </tr>
+
+        </table>
+    </form>
+
+    <br><br><hr>
+
+    <table>
+        <td>
+            <h2>輸入表單</h2>
+        </td>
+        
+    </table>
+
+    <table>
+        <td>
+            <form action="/stud/studentlist.html">
+                年齡：<input type="number"><br>
+                顏色選擇：<input type="color"><br>
+                出生日期：<input type="date"><br>
+                字體大小：<input type="range"><br>
+                信箱：<input type="email">
+                <button>提交</button>
+            </form>
+        </td>
+    </table>
+</body>
+</html>

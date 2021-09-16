@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隨意表單</title>
+    <style>
+        body{
+            background-color:rgb(246, 242, 248);
+        }
+        td{
+            border: 12px solid rgb(255, 255, 255);
+        }
+        table{
+            width: 700px;
+            height: 515px;
+            border: turquoise;
+            background-color: white;
+            margin: 0 auto;
+            border: 1px solid gray;
+            align-self: top;
+        }
+        input{
+            width: 420px;
+            height: 43px;
+            border:1px solid rgb(83, 83, 83);
+        }
+        select{
+            width: 420px;
+            height: 43px;
+        }
+        .Input-box{
+            color: silver;
+            size: 300;
+            width: 500;
+            text-align: left;
+        }
+        .Input-name{
+        
+            size: 50px;
+            width: 200;
+            text-align: right;
+        }
+        .Input-box-self{
+            
+            size: 50px;
+            
+            line-height: 2.25;
+        }
+        button{
+            border: none;
+            background-color: orange;
+            width: 70px;
+            height: 30px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+            font-size: 15;
+        }
+
+    </style>            
+</head>
+<body>
+    <h1>123</h1>
+    <table id="casual-list-frame" border="1">
+        <tr id="casual-list">
+            <td><p>隨意表單</p></td><br>
+        </tr>
+        <tr>
+            <td class="Input-name">名稱：</td>
+            <td class="Input-box"><input class="Input-box-self" type="text" size="50px"></td><br>
+        </tr>
+        <tr>
+            <td class="Input-name">信箱：</td>
+            <td class="Input-box"><input class="Input-box-self" type="email" size="50px"></td><br>
+        </tr>
+        <tr>
+            <td class="Input-name" >出生日期：</td>
+            <td class="Input-box"><input class="Input-box-self" type="date" ></td><br>
+        </tr>
+        <tr>
+            <td class="Input-name">城市：</td>
+            <td class="Input-box">
+                <select class="Input-box-self" type="">
+                    <option value="台北">台北</option>
+                    <option value="桃園">桃園</option>
+                    <option value="新竹">新竹</option>
+                </select>
+            </td><br>
+        </tr>
+        <tr>
+            <td class="Input-name">最喜歡的顏色：</td>
+            <td class="Input-box"><input class="Input-box-self" type="color" size="50px"></td><br>
+        </tr>
+        <tr>
+            <td class="Input-name">手機：</td>
+            <td class="Input-box"><input class="Input-box-self" type="text" size="50px"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td ><button id="send-button">送出</button>已有帳號，<a href="https://www.google.com/">立即登入</a></td>
+            
+        </tr>
+
+        
+        
+        
+
+        
+
+        
+        
+    </table>
+</body>
+</html> 
